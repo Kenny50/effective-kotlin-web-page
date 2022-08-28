@@ -1,23 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import { dataArr } from './api/StudyJamData';
+import  './styles/table.module.css'
 
 function App() {
+
+  const headerContent = ["index", "date", "chapter", "title", "guide", "note"]
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <table >
+          <thead>
+            <tr>
+
+              {
+                headerContent.map(content => (
+                  <th>
+                    {content}
+                  </th>
+                ))
+              }
+            </tr>
+          </thead>
+          <tbody>
+            {
+              dataArr.map(({ date, chapter, title, guided, note, index }) => (
+                <tr>
+                  <td> {index}</td>
+                  <td> {date}</td>
+                  <td> {chapter}</td>
+                  <td> {title}</td>
+                  <td> {guided}</td>
+                  <td> {note}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
       </header>
     </div>
   );
