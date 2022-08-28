@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/effective-kotlin-web-page/static/css/main.bc4abd91.css",
+    "main.js": "/effective-kotlin-web-page/static/js/main.e3699f99.js",
+    "static/js/787.dce01ca9.chunk.js": "/effective-kotlin-web-page/static/js/787.dce01ca9.chunk.js",
+    "index.html": "/effective-kotlin-web-page/index.html",
+    "main.bc4abd91.css.map": "/effective-kotlin-web-page/static/css/main.bc4abd91.css.map",
+    "main.e3699f99.js.map": "/effective-kotlin-web-page/static/js/main.e3699f99.js.map",
+    "787.dce01ca9.chunk.js.map": "/effective-kotlin-web-page/static/js/787.dce01ca9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc4abd91.css",
+    "static/js/main.e3699f99.js"
+  ]
+}
